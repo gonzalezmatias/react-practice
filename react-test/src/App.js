@@ -4,6 +4,8 @@ import Navbar from './components/layout/Navbar';
 import Dashboard from './components/dashboard/Dashboard'
 import ProjectsDetails from './components/projects/ProjectsDetails'
 import SignIn from './components/auth/SignIn'
+import SignUp from './components/auth/SignUp'
+
 
 
 class App extends Component {
@@ -15,7 +17,9 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Dashboard} />
             <Route path='/proyect/:id' component={ProjectsDetails} />
-            <Route path='/signIn' component={SignIn} />
+            <Route path='/signin' component={SignIn} />
+            <Route path='/signup' component={SignUp} />
+
           </Switch>
         </div>  
       </BrowserRouter>
